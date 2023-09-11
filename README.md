@@ -1,5 +1,9 @@
 # Ansibleチュートリアル
 
+このリポジトリは下記のQiita記事の付録です。
+
+https://qiita.com/mkin/items/76a6b483d333769eaadd
+
 ## Ansibleをインストールしてください
 
 Macの場合
