@@ -1,0 +1,14 @@
+- name: Setup Postfix on MailServer
+  hosts:
+    - mailservers
+  tasks:
+    - name: Install Postfix
+      yum:
+        name: postfix
+        state: present
+      become: yes
+    - name: Edit Postfix Config
+      copy:
+        src: "{{ playbook_dir }}/etc/postfix/main.cf"
+        dest: /etc/postfix/main.cf
+      become: yes
